@@ -61,9 +61,6 @@ This project helped me gain practical experience in Python programming, FastAPI,
 - Gained practical experience with MySQL connectivity using PyMySQL.
 - Learned frontend and backend integration.
 
-## 🙏 Acknowledgement
-Special thanks to my trainer **Sai Balaji Sir** for his valuable guidance and support throughout this project.
-
 ---
 
 ⭐ If you find this project useful, feel free to explore the repository!
