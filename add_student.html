@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add std</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5fb;
+    color: #1e293b;
+    padding: 30px 15px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #173b70;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+/* Form */
+form {
+    width: 480px;
+    max-width: 100%;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+
+/* Labels */
+label {
+    display: inline-block;
+    width: 115px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #334155;
+    margin-bottom: 15px;
+}
+
+/* Input fields */
+input {
+    width: 270px;
+    max-width: calc(100% - 120px);
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+    margin-bottom: 15px;
+    background-color: #f8fafc;
+}
+
+input:focus {
+    border-color: #2563eb;
+    background-color: white;
+    box-shadow: 0 0 4px rgba(37,99,235,0.3);
+}
+
+/* Attendance */
+select {
+    width: 270px;
+    max-width: calc(100% - 120px);
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: #f8fafc;
+    margin-bottom: 15px;
+}
+
+/* Submit button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #173b70;
+}
+
+@media (max-width: 500px) {
+    form {
+        padding: 20px;
+    }
+
+    label {
+        width: 100%;
+        margin-bottom: 7px;
+    }
+
+    input, select {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <h1>ADD STUDENT INFO</h1>
+    <form action="/student/add" method="post">
+        <label for="">NAME:</label>
+        <input type="text" name="name"><br><br>
+         <label for="">AGE:</label>
+        <input type="text" name="age"><br><br>
+         <label for="">GENDER:</label>
+        <input type="text" name="gender"><br><br>
+        <label for="">MARKS:</label>
+        <input type="text" name="marks"><br><br>
+        <label for="">COURSE:</label>
+        <input type="text" name="course"><br><br>
+        <label for="">IMAGE:</label>
+        <input type="text" name="image"><br><br>
+        <label for="">ATTENDANCE:</label>
+        <select name="status" id="">
+            <option value="1">present</option>
+            <option value="0">absent</option>
+        </select><br><br>
+        <button>submit</button>
+    </form>
+</body>
+</html>
